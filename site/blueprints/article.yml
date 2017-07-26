@@ -1,0 +1,40 @@
+title: Article
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  title
+    
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
+    
+  date:
+    icon: calendar
+    label: Date
+    type: datetime
+    time:
+      interval: 1
+    placeholder: Select a date…
+    default: now
+    required: true
+    width: 1/2
+  
+
+
+  author:
+    label: Author
+    type:  user
+
+
+  text:
+    label: Text
+    type: textarea
+
+  tags:
+    label: Tags
+    type:  text
+  
