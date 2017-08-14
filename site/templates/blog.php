@@ -1,11 +1,6 @@
 <?php snippet('header') ?>
 
 <main>
-<div class=container>
-<div class="col-md-2 col-xs-1"></div>
-
-
-<div class="col-md-8 col-xs-10">
   <!-- setting up variables -->
   <?php 
   $perpage=$page->perpage()->int();
@@ -32,6 +27,8 @@
     <div class="text">
       <?= $article->text()->kirbytext() ?>
     </div>
+
+    <!-- todo: make sure last article doesnt have an hr -->
     <hr class=article>
 
 
@@ -54,11 +51,8 @@
     <a href="<?php echo $pagination->nextPageURL() ?>">&rarr;</a>
     <?php endif ?>
 </nav>
-</div>
 
 
-<div class="col-md-2 col-xs-1"></div>
-</div>
 </main>
 
 <?php snippet('footer') ?>
