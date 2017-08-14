@@ -20,26 +20,18 @@
 
 </head>
 <body>
-
-  <header class="header wrap wide" role="banner">
-    <div class="grid">
-
-      <div class="branding column">
+<div class=container>
+  <div class=row>
+    <div class="col-md-2 col-xs-1"></div>
+    <div class="col-md-6 col-xs-7 header_custom">
+      <div class="branding">
         <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a><br>
         <div class=site_description><?=$site->description()->html() ?></div>
       </div>
-
-      <?php //snippet('menu') ?>
-
-
-      <div class="navigation column">
-        <ul class="menu">
-          <!--<li class="menu-item"><b class="heart">♥</b></li>-->
-          <li class="menu-item"><span class="heart">&hearts;</span></li>
-       </ul>
-     </div>
-
-
-
     </div>
-  </header>
+    <div class="col-md-2 col-xs-3 header_custom">
+      <div class="header_heart">&hearts;</div>
+    </div>
+    <div class="col-md-2 col-xs-1"></div>
+  </div>
+
