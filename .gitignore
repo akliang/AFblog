@@ -1,0 +1,16 @@
+site/config/config.php 
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[gG][iI][fF]
+*.[pP][nN][gG]
+content/
+.ftpquota
+kirby/*
+kirby-2.5.2.zip
+license.md
+panel/*
+thumbs/*
+wedding/*
+index.php
+readme.md
+site/config/*
