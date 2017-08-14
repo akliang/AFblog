@@ -2,10 +2,10 @@
 
 <main>
 <div class=container>
-<div class="col-md-3 col-xs-1"></div>
+<div class="col-md-2 col-xs-1"></div>
 
 
-<div class="col-md-6 col-xs-10">
+<div class="col-md-8 col-xs-10">
   <?php 
   $perpage=$page->perpage()->int();
   $list=$page->children()->visible()->flip()->paginate($perpage); 
@@ -14,8 +14,8 @@
 
   <?php foreach($list as $article): ?>
     <article>
-    <p class=article-date><?php echo $article->date('Y-m-d') ?></p>
     <p class=article-title><?php echo $article->title()->html() ?></p>
+    <p class=article-date>Posted on <?php echo $article->date('Y-m-d') ?> by <?php echo $article->author() ?></p>
     <?php 
       $image=$article->coverimage()->toFile();
       if ($image):
@@ -23,8 +23,14 @@
       <img src="<?= $image->url() ?>" alt="">
     <?php endif ?>
     <!--<p class=article-text><?php echo $article->text()->excerpt(300) ?></p>-->
-    <div style="text-align:right"><a href="<?php echo $article->url() ?>">Read more >></a></div>
-    <hr>
+    <!--<div style="text-align:right"><a href="<?php echo $article->url() ?>">Read more >></a></div>-->
+
+      <div class="text">
+        <?= $article->text()->kirbytext() ?>
+      </div>
+
+
+    <hr class=article>
     </article>
   <?php endforeach ?>
 
@@ -47,7 +53,7 @@
 </div>
 
 
-<div class="col-md-3 col-xs-1"></div>
+<div class="col-md-2 col-xs-1"></div>
 </div>
 </main>
 
