@@ -6,31 +6,35 @@
 
 
 <div class="col-md-8 col-xs-10">
+  <!-- setting up variables -->
   <?php 
   $perpage=$page->perpage()->int();
   $list=$page->children()->visible()->flip()->paginate($perpage); 
   $pagination = $list->pagination();
   ?>
 
+  <!-- print out the blog articles -->
   <?php foreach($list as $article): ?>
     <article>
     <p class=article-title><?php echo $article->title()->html() ?></p>
-    <p class=article-date>Posted on <?php echo $article->date('Y-m-d') ?> by <?php echo $article->author() ?></p>
     <?php 
       $image=$article->coverimage()->toFile();
       if ($image):
     ?>
-      <img src="<?= $image->url() ?>" alt="">
+      <img src="<?= $image->url() ?>" alt="" class=coverimage>
     <?php endif ?>
-    <!--<p class=article-text><?php echo $article->text()->excerpt(300) ?></p>-->
-    <!--<div style="text-align:right"><a href="<?php echo $article->url() ?>">Read more >></a></div>-->
-
-      <div class="text">
-        <?= $article->text()->kirbytext() ?>
-      </div>
+    <div class=article-date>Posted on <?php echo $article->date('F j, Y') ?> by <?php echo $article->author() ?></div>
+    <?php if ($image): ?>
+      <hr class=coverimage>
+    <?php endif ?>
 
 
+    <div class="text">
+      <?= $article->text()->kirbytext() ?>
+    </div>
     <hr class=article>
+
+
     </article>
   <?php endforeach ?>
 

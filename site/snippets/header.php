@@ -10,6 +10,7 @@
   <meta name="description" content="<?= $site->description()->html() ?>">
 
   <?= css('assets/css/index.css') ?>
+  <?= css('assets/css/custom.css') ?>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -33,7 +34,8 @@
 
       <div class="navigation column">
         <ul class="menu">
-          <li class="menu-item"><b class="heart">♥</b></li>
+          <!--<li class="menu-item"><b class="heart">♥</b></li>-->
+          <li class="menu-item"><span class="heart">&hearts;</span></li>
        </ul>
      </div>
 

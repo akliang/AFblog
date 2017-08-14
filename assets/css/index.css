@@ -183,6 +183,8 @@ a.active {
 }
 
 /* Misc */
+
+/*
 hr {
   font-size: 1.25rem;
   font-weight: 500;
@@ -203,11 +205,30 @@ hr::before {
 }
 
 hr::after {
-  content: "× × ×";
+  //content: "× × ×";
+  content: "&#9824";
   background: #fffff8;
   position: relative;
   padding: 0 .25rem;
   top: -.25rem;
+}
+*/
+
+hr.article {
+  border-top: 4px double #8c8b8b;
+  text-align: center;
+  margin-top:60px;
+  margin-bottom:60px;
+}
+hr.article:after {
+  content: '\002665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: white;
+  color: #8c8b8b;
+  font-size: 18px;
 }
 
 h1 + hr,
@@ -241,6 +262,7 @@ img {
   border-style: none;
   width: 100%;
   height: auto;
+  margin-bottom:6rem;
 }
 
 figcaption {
@@ -826,10 +848,10 @@ article {
 }
 
 .article-date {
-  /*text-align: center;*/
+  text-align: right;
   font-size:0.9em;
   color:#888;
-  margin-bottom:0;
+  margin-bottom:30px;
 }
 
 .article-text{
@@ -983,4 +1005,6 @@ article {
     width: 33.33%;
   }
 }
+
+
 

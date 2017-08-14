@@ -11,6 +11,3 @@ role: editor
 history:
   - blog/homemade-tv-console-part-1
   - blog
-  - blog/four
-  - blog/three
-  - blog/two
