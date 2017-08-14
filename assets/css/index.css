@@ -170,11 +170,16 @@ h4 {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid #71efac;
+  border-bottom:none;
 }
 
 a:hover, a:focus, a:active {
   color: #560bed;
+}
+
+a.active {
+  color:#71efac;
+  border-bottom: 2px solid #71efac;
 }
 
 /* Misc */
@@ -264,7 +269,7 @@ figcaption {
 }
 
 h1 + .intro {
-  margin-top: -2.25rem;
+  //margin-top: -2.25rem;
 }
 
 .text h2, .text h3 {
@@ -651,13 +656,20 @@ body {
   text-align: center;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.95rem;
   margin-bottom: .45rem;
 }
 
 .branding a {
   border-bottom: 0;
+}
+
+.site_description {
+  font-size: 1.6rem;
+  line-height: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 @media all and (min-width: 56em) {
@@ -692,7 +704,7 @@ body {
 .menu-item:not(:last-child)::after {
   content: "⁄";
   display: inline-block;
-  font-size: .75em;
+  font-size: 1.5rem;
   padding: 0 .2em;
   color: #a8a5be;
 }
@@ -767,6 +779,12 @@ body {
   }
 }
 
+nav.pagination {
+  margin-top: 2em;
+  width:100%;
+  text-align:center;
+}
+
 /* -----  3.4 Main Content  ------------------------------------------------- */
 
 .main {
@@ -791,9 +809,16 @@ body {
 
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
 
+article {
+  padding-left:1.5em;
+  margin-bottom:2em;
+}
+
+
 .article-title {
   font-weight: 700;
   margin-bottom: 0;
+  font-size:2em;
 }
 
 .article-title a {
@@ -801,7 +826,14 @@ body {
 }
 
 .article-date {
-  text-align: center;
+  /*text-align: center;*/
+  font-size:0.9em;
+  color:#888;
+  margin-bottom:0;
+}
+
+.article-text{
+  margin-left:2em;
 }
 
 .article:last-of-type + hr {
@@ -951,3 +983,4 @@ body {
     width: 33.33%;
   }
 }
+

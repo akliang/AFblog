@@ -23,18 +23,20 @@ fields:
     required: true
     width: 1/2
   
+  tags:
+    label: Tags
+    type:  text
+    width: 1/2
 
 
   author:
     label: Author
     type:  user
+    width: 1/2
 
 
   text:
     label: Text
     type: textarea
 
-  tags:
-    label: Tags
-    type:  text
   

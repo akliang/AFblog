@@ -1,7 +1,11 @@
 <?php snippet('header') ?>
 
 <main>
+<div class=container>
+<div class="col-md-3 col-xs-1"></div>
 
+
+<div class="col-md-6 col-xs-10">
   <?php 
   $perpage=$page->perpage()->int();
   $list=$page->children()->visible()->flip()->paginate($perpage); 
@@ -10,37 +14,41 @@
 
   <?php foreach($list as $article): ?>
     <article>
-    <h1><?php echo $article->title()->html() ?></h1>
-    <h1><?php echo $article->date('Y-m-d') ?></h1>
-    <p><?php echo $article->text()->excerpt(300) ?></p>
-    <a href="<?php echo $article->url() ?>">Read more…</a>
+    <p class=article-date><?php echo $article->date('Y-m-d') ?></p>
+    <p class=article-title><?php echo $article->title()->html() ?></p>
+    <?php 
+      $image=$article->coverimage()->toFile();
+      if ($image):
+    ?>
+      <img src="<?= $image->url() ?>" alt="">
+    <?php endif ?>
+    <!--<p class=article-text><?php echo $article->text()->excerpt(300) ?></p>-->
+    <div style="text-align:right"><a href="<?php echo $article->url() ?>">Read more >></a></div>
+    <hr>
     </article>
   <?php endforeach ?>
 
 
-<nav>
-  <ul>
-
+<nav class=pagination>
     <?php if($pagination->hasPrevPage()): ?>
-    <li><a href="<?php echo $pagination->prevPageURL() ?>">&larr;</a></li>
-    <?php else: ?>
-    <li><span>&larr;</span></li>
+    <a href="<?php echo $pagination->prevPageURL() ?>">&larr;</a>
     <?php endif ?>
 
-    <?php foreach($pagination->range(10) as $r): ?>
-    <li><a<?php if($pagination->page() == $r) echo ' class="active"' ?> href="<?php echo $pagination->pageURL($r) ?>"><?php echo $r ?></a></li>
+    <?php if($pagination->hasNextPage() || $pagination->hasPrevPage()): ?>
+    <?php foreach($pagination->range(5) as $r): ?>
+    <a<?php if($pagination->page() == $r) echo ' class="active"' ?> href="<?php echo $pagination->pageURL($r) ?>"><?php echo $r ?></a>
     <?php endforeach ?>
+    <?php endif ?>
 
     <?php if($pagination->hasNextPage()): ?>
-    <li class="last"><a href="<?php echo $pagination->nextPageURL() ?>">&rarr;</a></li>
-    <?php else: ?>
-    <li class="last"><span>&rarr;</span></li>
+    <a href="<?php echo $pagination->nextPageURL() ?>">&rarr;</a>
     <?php endif ?>
-
-  </ul>
 </nav>
+</div>
 
 
+<div class="col-md-3 col-xs-1"></div>
+</div>
 </main>
 
 <?php snippet('footer') ?>
