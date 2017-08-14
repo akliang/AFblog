@@ -228,7 +228,7 @@ hr.article:after {
   padding: 0 10px;
   background: white;
   color: #8c8b8b;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 h1 + hr,
@@ -762,6 +762,7 @@ body {
   }
 }
 
+/*
 .footer {
   position: absolute;
   bottom: 0;
@@ -770,6 +771,7 @@ body {
   text-align: center;
   font-size: .875rem;
 }
+*/
 
 .footer p {
   margin-bottom: 0;
@@ -793,6 +795,7 @@ body {
 @media all and (min-width: 48em) {
   .footer-copyright, .footer-madewithkirby {
     display: inline;
+    text-align:center;
   }
   .footer-copyright::after {
     content: "—";
@@ -832,13 +835,13 @@ nav.pagination {
 /* ----- 4.2 Blog Article  -------------------------------------------------- */
 
 article {
-  padding-left:1.5em;
+  //padding-left:1.5em;
   margin-bottom:2em;
 }
 
 
 .article-title {
-  font-weight: 700;
+  //font-weight: 700;
   margin-bottom: 0;
   font-size:2em;
 }
