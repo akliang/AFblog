@@ -857,6 +857,13 @@ article {
   margin-bottom:30px;
 }
 
+.article-date-left {
+  text-align: left;
+  font-size:0.9em;
+  color:#888;
+  margin-bottom:30px;
+}
+
 .article-text{
   margin-left:2em;
 }

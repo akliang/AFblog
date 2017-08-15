@@ -23,9 +23,11 @@
       ?>
         <img src="<?= $image->url() ?>" alt="" class=coverimage>
       <?php endif ?>
-      <div class=article-date>Posted on <?php echo $article->date('F j, Y') ?> by <?php echo $article->author() ?></div>
       <?php if ($image): ?>
+        <div class=article-date>Posted on <?php echo $article->date('F j, Y') ?> by <?php echo $article->author() ?></div>
         <hr class=coverimage>
+      <?php else: ?>
+        <div class=article-date-left>Posted on <?php echo $article->date('F j, Y') ?> by <?php echo $article->author() ?></div>
       <?php endif ?>
 
 
