@@ -9,6 +9,22 @@ div.header_heart {
   text-align:right;
 }
 
+figure {
+  margin-bottom:4rem;
+  border:1px solid black;
+}
+
+figure img {
+  margin-bottom:0rem;
+}
+
+figure figcaption {
+  margin-top:1rem;
+  margin-bottom:1rem;
+  font-size:1.4rem;
+  text-align:center;
+}
+
 img.coverimage {
   border:1px solid black;
   margin-bottom:0px;
