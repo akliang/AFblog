@@ -37,6 +37,27 @@ hr.coverimage:after {
     transform: rotate(60deg);
 }
 
+.pagination {
+  margin-top:0.75rem;
+  margin-bottom:3rem;
+}
+
+.pagination a {
+  border:1px solid #EEE;
+  padding:1.5rem;
+}
+
+.pagination a.active {
+  background-color:#EEE;
+  color:#261e66;
+}
+
+
+.pagination a:hover {
+  background-color:#DDD;
+  text-decoration:none;
+}
+
 figure.polaroid {
   padding:15px;
   border:3px solid #CCC;

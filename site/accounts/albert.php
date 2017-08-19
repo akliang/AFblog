@@ -9,5 +9,7 @@ password: >
 language: en
 role: editor
 history:
+  - blog/the-bold-bitter-melon
+  - blog/elsa-the-sleepy
   - blog/homemade-tv-console-part-1
   - blog

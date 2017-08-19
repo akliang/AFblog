@@ -9,4 +9,5 @@ password: >
 language: en
 role: editor
 history:
+  - blog/our-garden
   - blog
