@@ -11,10 +11,13 @@
       $perpage=$page->perpage()->int();
       $list=$page->children()->visible()->flip()->paginate($perpage); 
       $pagination = $list->pagination();
+      $postcount=0;
     ?>
 
     <!-- print out the blog articles -->
     <?php foreach($list as $article): ?>
+    <?php $postcount++; ?>
+
       <article>
       <p class=article-title><?php echo $article->title()->html() ?></p>
       <?php 
@@ -35,8 +38,9 @@
         <?= $article->text()->kirbytext() ?>
       </div>
 
-      <!-- todo: make sure last article doesnt have an hr -->
-      <hr class=article>
+      <?php if ($postcount < count($list) ): ?>
+        <hr class=article>
+      <?php endif ?>
 
 
       </article>
