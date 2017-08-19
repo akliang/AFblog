@@ -11,7 +11,7 @@ div.header_heart {
 
 figure {
   margin-bottom:4rem;
-  border:1px solid black;
+  border:1px solid #AAA;
 }
 
 figure img {
@@ -26,7 +26,7 @@ figure figcaption {
 }
 
 img.coverimage {
-  border:1px solid black;
+  border:1px solid #AAA;
   margin-bottom:0px;
 }
 
