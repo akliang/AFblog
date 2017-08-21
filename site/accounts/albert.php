@@ -9,7 +9,8 @@ password: >
 language: en
 role: editor
 history:
-  - blog/the-bold-bitter-melon
-  - blog/elsa-the-sleepy
+  - blog/oreo
+  - blog/homemade-tv-console-part-2
+  - blog/ann-arbor-rolling-sculpture-car-show-2017
   - blog/homemade-tv-console-part-1
-  - blog
+  - blog/the-bold-bitter-melon
