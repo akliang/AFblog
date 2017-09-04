@@ -9,8 +9,8 @@ password: >
 language: en
 role: editor
 history:
+  - blog/sleeping-bear-2016-remix
+  - blog/lazy-sunday
   - blog/oreo
   - blog/homemade-tv-console-part-2
   - blog/ann-arbor-rolling-sculpture-car-show-2017
-  - blog/homemade-tv-console-part-1
-  - blog/the-bold-bitter-melon
