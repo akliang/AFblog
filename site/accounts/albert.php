@@ -10,7 +10,7 @@ language: en
 role: editor
 history:
   - blog/sleeping-bear-2016-remix
+  - blog/elsa-the-cute
   - blog/lazy-sunday
   - blog/oreo
   - blog/homemade-tv-console-part-2
-  - blog/ann-arbor-rolling-sculpture-car-show-2017

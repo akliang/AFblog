@@ -7,11 +7,11 @@ fields:
     label: Title
     type:  title
     
-  coverimage:
-    label: Cover Image
-    type: image
+  author:
+    label: Author
+    type:  user
     width: 1/2
-    
+
   date:
     icon: calendar
     label: Date
@@ -22,18 +22,6 @@ fields:
     default: now
     required: true
     width: 1/2
-  
-  tags:
-    label: Tags
-    type:  text
-    width: 1/2
-
-
-  author:
-    label: Author
-    type:  user
-    width: 1/2
-
 
   text:
     label: Text
