@@ -1,4 +1,4 @@
-site/config/config.php 
+site/config/license.txt
 *.[jJ][pP][gG]
 *.[jJ][pP][eE][gG]
 *.[gG][iI][fF]
@@ -13,4 +13,3 @@ thumbs/*
 wedding/*
 index.php
 readme.md
-site/config/*
