@@ -36,12 +36,12 @@
     <div class="col-md-2 col-xs-1"></div>
     <div class="col-md-6 col-xs-7 header_custom">
       <div class="branding">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a><br>
+        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a> <span class=header_heart>&hearts;</span><br>
         <div class=site_description><?=$site->description()->html() ?></div>
       </div>
     </div>
     <div class="col-md-2 col-xs-3 header_custom">
-      <div class="header_heart">&hearts;</div>
+      <div class="rss"><a href="http://albertandfei.com/blog/feed"><img src="http://albertandfei.com/blog/feed/rss-icon.png" style="height:100%;"></a></div>
     </div>
     <div class="col-md-2 col-xs-1"></div>
   </div>

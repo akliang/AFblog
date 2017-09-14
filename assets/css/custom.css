@@ -3,10 +3,19 @@ div.header_custom {
   margin-bottom:4rem;
 }
 
-div.header_heart {
+span.header_heart {
   font-size:2.5rem;
   color:red;
-  text-align:right;
+  text-align:left;
+}
+
+div.rss {
+  height:2rem;
+  width:2rem;
+  float:right;
+}
+div.rss img {
+  border:none;
 }
 
 figure {
