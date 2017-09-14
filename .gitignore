@@ -17,4 +17,5 @@ site/accounts/
 content/home
 content/error
 content/1-blog/*-*
+!content/1-blog/feed/*.png
 
