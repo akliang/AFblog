@@ -1,0 +1,9 @@
+Title: Blog
+
+----
+
+Text: (this page isn't used for anything, except to change the posts per page)
+
+----
+
+Perpage: 3
